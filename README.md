@@ -45,10 +45,12 @@ I work across the full path from data ingestion and model services to product in
 This snapshot is refreshed weekly from public GitHub data.
 
 <!-- profile-stats:start -->
-| Public source projects | Public commits, last 12 months | Public pull requests | Public contributions, last 12 months |
-| :---: | :---: | :---: | :---: |
-| [5](https://github.com/n3onnhowever?tab=repositories&type=source) | [86](https://github.com/n3onnhowever?tab=overview) | [0](https://github.com/search?q=type%3Apr%20author%3An3onnhowever&type=pullrequests) | **91** |
+| Public source projects | Public commits, last 12 months | Public pull requests |
+| :---: | :---: | :---: |
+| [5](https://github.com/n3onnhowever?tab=repositories&type=source) | [84](https://github.com/n3onnhowever?tab=overview) | [0](https://github.com/search?q=type%3Apr%20author%3An3onnhowever&type=pullrequests) |
 <!-- profile-stats:end -->
+
+<sub>Automated commits from this profile repository are excluded from the snapshot.</sub>
 
 ## How I work
 

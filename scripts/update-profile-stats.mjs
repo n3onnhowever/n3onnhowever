@@ -61,10 +61,14 @@ async function fetchPublicStats(login, token) {
           query ProfileContributions($login: String!) {
             user(login: $login) {
               contributionsCollection {
-                totalCommitContributions
-                restrictedContributionsCount
-                contributionCalendar {
-                  totalContributions
+                commitContributionsByRepository(maxRepositories: 100) {
+                  repository {
+                    isPrivate
+                    nameWithOwner
+                  }
+                  contributions {
+                    totalCount
+                  }
                 }
               }
             }
@@ -88,14 +92,19 @@ async function fetchPublicStats(login, token) {
       repository.name.toLowerCase() !== login.toLowerCase(),
   ).length;
 
-  const allContributions = collection.contributionCalendar.totalContributions;
-  const privateContributions = collection.restrictedContributionsCount;
+  const profileRepository = `${login}/${login}`.toLowerCase();
+  const publicCommits = collection.commitContributionsByRepository
+    .filter(
+      ({ repository }) =>
+        !repository.isPrivate &&
+        repository.nameWithOwner.toLowerCase() !== profileRepository,
+    )
+    .reduce((total, entry) => total + entry.contributions.totalCount, 0);
 
   return {
     publicProjects,
-    publicCommits: collection.totalCommitContributions,
+    publicCommits,
     publicPullRequests: pullRequests.total_count,
-    publicContributions: Math.max(0, allContributions - privateContributions),
   };
 }
 
@@ -106,9 +115,9 @@ export function buildStatsBlock(login, stats) {
 
   return [
     START_MARKER,
-    "| Public source projects | Public commits, last 12 months | Public pull requests | Public contributions, last 12 months |",
-    "| :---: | :---: | :---: | :---: |",
-    `| [${formatNumber(stats.publicProjects)}](${repositoriesUrl}) | [${formatNumber(stats.publicCommits)}](${profileUrl}?tab=overview) | [${formatNumber(stats.publicPullRequests)}](${pullRequestsUrl}) | **${formatNumber(stats.publicContributions)}** |`,
+    "| Public source projects | Public commits, last 12 months | Public pull requests |",
+    "| :---: | :---: | :---: |",
+    `| [${formatNumber(stats.publicProjects)}](${repositoriesUrl}) | [${formatNumber(stats.publicCommits)}](${profileUrl}?tab=overview) | [${formatNumber(stats.publicPullRequests)}](${pullRequestsUrl}) |`,
     END_MARKER,
   ].join("\n");
 }
