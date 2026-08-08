@@ -1,10 +1,9 @@
 <p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="n3onnhowever - ML Developer and Data Engineer" />
+  <img src="./assets/header.svg" width="100%" alt="n3onnhowever - ML Developer, Data Engineer, Product Builder" />
 </p>
 
 <p align="center">
-  <strong>Building the whole path from raw data to a product people can actually use.</strong><br />
-  <sub>Applied ML, data systems, model services, analytics interfaces, and reliable delivery.</sub>
+  <img src="./assets/typing.svg" width="100%" alt="Applied ML that ships; data systems operators can trust; usable interfaces for complex work" />
 </p>
 
 <p align="center">
@@ -15,9 +14,30 @@
   <a href="https://github.com/n3onnhowever/n3onnhowever">profile source</a>
 </p>
 
-<p align="center">
-  <img src="./assets/activity.svg" width="100%" alt="Aggregate GitHub activity including anonymized private work" />
-</p>
+## Work snapshot
+
+<table>
+  <tr>
+    <td width="25%" align="center">
+      <strong>21</strong><br />
+      <sub>repositories outside this profile<br />5 public / 16 private</sub>
+    </td>
+    <td width="25%" align="center">
+      <strong>965</strong><br />
+      <sub>commits / 12 months<br />84 public / 881 private</sub>
+    </td>
+    <td width="25%" align="center">
+      <strong>919</strong><br />
+      <sub>private contributions / 12 months<br />anonymized by GitHub</sub>
+    </td>
+    <td width="25%" align="center">
+      <strong>50</strong><br />
+      <sub>pull requests<br />aggregate / all time</sub>
+    </td>
+  </tr>
+</table>
+
+<sub>Private commit totals are a dated snapshot from 08 Aug 2026. No private repository names, commit messages, SHA values, clients, or code are published.</sub>
 
 ## Selected public builds
 
@@ -101,10 +121,18 @@ These are intentionally high-level capability summaries. Repository names, clien
   </tr>
 </table>
 
+## Contribution landscape
+
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D GitHub contribution calendar and activity summary" />
+</p>
+
+<sub>The upstream 3D card uses repository-scoped token data. Private contribution days remain anonymous, while repository-level Commit, PR, Review, and Repo breakdowns are limited to token-visible activity.</sub>
+
 ## Working set
 
 <p align="center">
-  <img src="./assets/stack.svg" width="100%" alt="Python, TypeScript, SQL, FastAPI, React, Docker, ML, LLM systems, and data operations" />
+  <img src="./assets/skills.svg" width="100%" alt="Python, TypeScript, JavaScript, FastAPI, React, Svelte, Vite, Node.js, Docker, PostgreSQL, PyTorch, Git, GitHub, and Linux" />
 </p>
 
 ## Operating principles
@@ -114,11 +142,11 @@ These are intentionally high-level capability summaries. Repository names, clien
 | Clear state, errors, and audit trails. | Explicit inputs, contracts, and repeatable runs. | Interfaces and handoffs built for real operators. |
 
 <details>
-  <summary><strong>How private activity is represented</strong></summary>
+  <summary><strong>Privacy and component provenance</strong></summary>
   <br />
-  GitHub exposes private activity to public viewers only as anonymized contribution counts. The exact private commit aggregate in the activity card is a local, dated snapshot of default-branch commits; no repository names, commit messages, SHA values, organizations, or code are published. The weekly workflow uses the repository-scoped <code>GITHUB_TOKEN</code> and cannot read private repositories.
+  GitHub exposes private activity publicly only as anonymized contribution counts. The profile uses unmodified SVG output from established MIT-licensed projects rather than custom-drawn widgets. The 3D contribution workflow is pinned to a specific upstream commit and receives only the repository-scoped <code>GITHUB_TOKEN</code>. Full attribution is recorded in <a href="./THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>.
 </details>
 
 <p align="center">
-  <sub>Build the model. Build the system around it. Make the result understandable.</sub>
+  <img src="./assets/footer.svg" width="100%" alt="" />
 </p>
