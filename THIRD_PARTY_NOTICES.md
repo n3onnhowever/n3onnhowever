@@ -25,6 +25,25 @@ The generated file embeds JetBrains Mono. The font identifies its copyright and 
 - File: `assets/skills.svg`
 - Use: unmodified output from the official renderer API
 
+## GitHub Profile Summary Cards
+
+- Project: <https://github.com/vn7n24fzkq/github-profile-summary-cards>
+- License: [MIT](https://github.com/vn7n24fzkq/github-profile-summary-cards/blob/main/LICENSE)
+- Directory: `profile-summary-card-output/tokyonight/`
+- Use: generated output from the upstream GitHub Action and hosted API
+
+## GitHub Stats Extended
+
+- Project: <https://github.com/stats-organization/github-stats-extended>
+- License: [MIT](https://github.com/stats-organization/github-stats-extended/blob/master/LICENSE)
+- Use: official repository-card image endpoint in `README.md`
+
+## GitHub Readme Streak Stats
+
+- Project: <https://github.com/DenverCoder1/github-readme-streak-stats>
+- License: [MIT](https://github.com/DenverCoder1/github-readme-streak-stats/blob/main/LICENSE)
+- Use: official hosted streak image endpoint in `README.md`
+
 ## GitHub Profile 3D Contrib
 
 - Project: <https://github.com/yoshi389111/github-profile-3d-contrib>
@@ -34,3 +53,13 @@ The generated file embeds JetBrains Mono. The font identifies its copyright and 
 - Use: unmodified `profile-night-view` output from the upstream GitHub Action
 
 The workflow passes only GitHub's repository-scoped `GITHUB_TOKEN`; no personal access token is stored or supplied to third-party code.
+
+## Spotify GitHub Profile
+
+- Project: <https://github.com/kittinan/spotify-github-profile>
+- License: [MIT](https://github.com/kittinan/spotify-github-profile/blob/master/LICENSE)
+- Template: `api/templates/spotify.spotify-embed.html.j2`
+- Pinned source commit: `0f605fac8dbaac17000b40c6bb8df7c3b89839db`
+- File: `assets/spotify-new-trip.svg`
+- Use: static output of the upstream Spotify Embed layout with official artwork, track metadata, 50% decorative progress, and cyan/blue/violet color overrides only
+- Official track: <https://open.spotify.com/track/2lpLHJXgSGFU5GuIk8qzgs>

@@ -12,16 +12,16 @@ const assets = [
   {
     file: "header.svg",
     source: capsuleUrl({
-      type: "waving",
+      type: "venom",
       color,
-      height: "250",
+      height: "210",
       section: "header",
       text: "n3onnhowever",
-      fontSize: "58",
+      fontSize: "50",
       fontColor: "f8fafc",
       animation: "fadeIn",
       fontAlignY: "40",
-      desc: "ML Developer - Data Engineer - Product Builder",
+      desc: "Data Engineering - Machine Learning - Analytics",
       descAlignY: "61",
       descSize: "18",
     }),
@@ -58,7 +58,7 @@ for (const asset of assets) {
     throw new Error(`${asset.file}: upstream returned ${response.status}`);
   }
 
-  const svg = await response.text();
+  const svg = (await response.text()).replace(/[ \t]+(?=\r?$)/gm, "");
   if (!svg.includes("<svg") || svg.length > 2_000_000) {
     throw new Error(`${asset.file}: upstream response is not a valid SVG asset`);
   }
